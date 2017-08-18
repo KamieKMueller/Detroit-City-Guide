@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">Detroit City Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <style>
+ 
+    a:hover {
+        color: red;
+    }
+    
+    </style>
+
+    <link href="css/grayscale.min.css" rel="stylesheet">
+   
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#page-top">Detroit City Guide</a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quiz"onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">Quiz</a>
+                    </li>
+                    <li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#pricecalculator"
+   onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">Price Calculators</a>
+                    </li>
+                    
+                    <!--<li>-->
+                    <!--    <li class="nav-item">-->
+                    <!--    <a class="nav-link" href="#faq">FAQ</a>-->
+                    <!--</li>-->
+            
+                                <li class="nav-item">
+                    <a class="nav-link" href="#faq"
+                    onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">FAQ</a>
+                    
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="#detroithistory"onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">History of Detroit</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus"onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">About us </a>
+                    </li>
+                    
+                    <li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contact"onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">Contact</a>
+                    </li>
+                    
+                    <li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#map"onmouseover  = "this.style.textDecoration = 'underline'" onmouseout = "this.style.textDecoration = 'none'">Map and Music</a>
+                    </li>
+                    
+                    
+        </div>
+    </nav>
+   
+   
+    <!-- Intro Header -->
+
+    <header class="masthead">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">Say Nice Things About Detroit</h1>
+                        <p class="intro-text">A guide to your perfect Detroit trip!
+                            <br> </p>
+                        <a href="#quiz" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </header>
+    <!-- Quiz Section -->
+    <section id="quiz" class="download-section content-section text-center">
+        <h1>Quiz</h1>
+        <form method = "POST" action = "/quiz">
+        
+        <h3>How long will you be in Detroit?</h3>
+        
+        <input type = "radio" name = "duration" value = "short">two days or less<br>
+        <input type = "radio" name = "duration" value = "medium">three to four days<br>
+        <input type = "radio" name = "duration" value = "long">five plus days<br>
+        <br> </br>
+        <h3>How old are you?</h3>
+        
+        <input type = "radio" name = "age" value = "youth">0-12<br>
+        <input type = "radio" name = "age" value = "teens">13-20<br>
+        <input type = "radio" name = "age" value = "adults">21+<br>
+         <br> </br>
+        <h3>What kinds of things do you enjoy?</h3>
+        
+        <input type = "radio" name = "things" value = "art">art and museums<br>
+        <input type = "radio" name = "things" value = "food">food<br>
+        <input type = "radio" name = "things" value = "sports">sports<br>
+         <br> </br>
+         
+         <input type="submit">
+         
+         <br> 
+         <br>
+             <a href="#pricecalculator" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+        </form>
+    </section>
+    
+    
+<!--Prices-->
+    <section id="pricecalculator" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1>Prices</h1>
+                    <h4> Museum of Contemporary Art:</h4>
+                    <h6> Suggested donation: $5</h6>
+                    <br>
+                    
+                    <form method = "POST" action = "/price">
+                    <h4>DIA:</h4>
+                
+                    <h6> Adult: $14 <input type = "text" name = "dia_price_adult">
+                         <br>
+                         <br>
+                         Ages 6-17: $6 <input type = "text" name = "dia_price_youth">
+                         <br>
+                         <br>
+                         Seniors: $9 <input type = "text" name = "dia_price_seniors">
+                         <br>
+                         <br>
+                         <input type="submit">
+                         </h6>
+                        </form>
+                        
+                    <form method = "POST" action = "/price2">
+                    <h4>Michigan Science Center:</h4>
+                    <h6>
+                        Adult: $14 <input type = "text" name = "msc_price_adult">
+                        <br>
+                        <br>
+                        Under 12: $11 <input type = "text" name = "msc_price_youth">
+                        <br>
+                        <br>
+                        Seniors 65+: $11 <input type = "text" name = "msc_price_senior">
+                        <br>
+                        <br>
+                        </h6>
+                        <input type="submit">
+                        
+                      </form>
+                      
+                      
+                      <br>
+                      <br>
+                      <form method = "POST" action = "/price3">
+                    <h4>The Detroit People Mover:</h4>
+                
+                    <h6> Everyone: $0.75 <input type = "text" name = "num_person">
+                         <br>
+                         <br>
+                         <input type="submit">
+                         </h6>
+                        </form>
+                        
+                      <br>
+                      <br>
+                      <form method = "POST" action = "/price4">
+                    <h4>The Q-Line Detroit:</h4>
+                    <h6>
+                        Single Pass (3 hours): $1.50 <input type = "text" name = "qline_single">
+                        <br>
+                        <br>
+                        Day Pass: $3 <input type = "text" name = "qline_day">
+                        <br>
+                        <br>
+                        Month Pass: $30 <input type = "text" name = "qline_month">
+                        <br>
+                        <br>
+                        Annual Pass (per year): $285 <input type = "text" name = "qline_annual">
+                        <br>
+                        <br>
+                       </h6>
+                        <input type="submit">
+                        
+                      </form>
+                      <br>
+                      <br>
+                      
+                      <form method = "POST" action = "/price5">
+                    <h4>The MOGO Detroit:</h4>
+                    <h6>
+                        Daily Pass : $8 <input type = "text" name = "mogo_day">
+                        <br>
+                        <br>
+                        Monthly Pass: $18 <input type = "text" name = "mogo_month">
+                        <br>
+                        <br>
+                        Annual Pass: $80 <input type = "text" name = "mogo_annual">
+                        </h6>
+                        <input type="submit">
+                        <br>
+                        <br>
+                        <a href="#faq" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                      </form>
+                    
+                    
+            
+            
+            
+            
+            </div>
+        <!--<br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br>-->
+        <!-- <br><br>-->
+        <!-- <br><br>-->
+        <!-- <br>-->
+        <!-- <a href="#faq" class="btn btn-circle page-scroll">-->
+        <!--                    <i class="fa fa-angle-double-down animated"></i>-->
+        <!--                </a>-->
+                        
+            
+            
+    </section>
+<!--faq-->
+<section id="faq" class="content-section text-center">
+    
+    <h1>FAQ</h1>
+    <br>
+    <h3>Is Detroit safe?</h3>
+    <br>
+    <h6>Don't be afraid of Detroit! Between Wayne State University and the riverfront, Detroit is definitely safe.</h6>
+    <br>
+    <br>
+    <h3>What are a few modes of transportaion?</h3>
+    <br>
+    <br>
+    <h6>The  <a target="_blank" href="https://qlinedetroit.com/plan-your-ride/">QLine</a>, the <a target="_blank" href="https://visitdetroit.com/profile/detroit-people-mover-detroit-transportation-corp/">Detroit People Mover</a> and the <a target="_blank" href="https://mogodetroit.org/"> MOGO Detroit</a> are excellent options! <br>The QLine runs from Grand Boulevard, through Midtown and Downtown to Congress.  <br>The Detroit People Mover runs in Downtown.</h6>
+    <br>
+    <style>
+    .column-left{ float: left; width: 33%; }
+    .column-right{ float: right; width: 33%; }
+    .column-center{ display: inline-block; width: 33%; }
+</style>
+<div class="container">
+    <div class="column-left">QLine
+    <br
+    <p>
+<!--An image that is a link:-->
+<!--<a href="https://www.w3schools.com">-->
+<!--<img src="smiley.gif" alt="Go to W3Schools!" width="42" height="42" border="0">-->
+<!--</a>-->
+<!--</p>-->
+<a target="_blank" href="https://qlinedetroit.com/">
+    <img src="img/QLINE.png" alt="QLINE" style="width:304px;height:228px;">
+    
+</a>
+
+    
+    </div>
+    <div class="column-center">Detroit People Mover
+    <a target="_blank" href="https://visitdetroit.com/profile/detroit-people-mover-detroit-transportation-corp/">
+    <img src="http://www.thepeoplemover.com/wp-content/uploads/2016/05/map.png" alt="Detroit People Mover" style="width:304px;height:228px;">
+    </a>
+    
+  
+    </div>
+    <div class="column-right">MOGO Detroit
+     <a target="_blank" href="https://mogodetroit.org/">
+    <img src="img/mogo.png" alt="MOGO Detroit" style="width:304px;height:228px;">
+    </a>
+    </div>
+</div>
+    
+    <br>
+    <br>
+
+    <h3>Where can I stay?</h3>
+    <br>
+    <br>
+    <h6>
+    MGM Grand Detroit (about $162 per night)
+    <br>
+    <br>
+    The Westin Book Cadillac Detroit (about $179 per night)
+    <br>
+    <br>
+    DoubleTree Suites by Hilton Hotel Detroit Downtown - Fort Shelby (about $152 per night)
+    <br>
+    <br>
+    Detroit Marriott at the Renaissance Center (about $249 per night)
+    <br>
+    <br>
+    Greektown Hotel (about $164 per night)
+    <br>
+    <br>
+    Or check out <a target="_blank" href="https://www.airbnb.com/s/Detroit----MI/homes?type=loft&listing_types%5B%5D=35&allow_override%5B%5D=&ne_lat=42.416688762635665&ne_lng=-82.9633816015662&sw_lat=42.281380674508775&sw_lng=-83.11856348633182&zoom=12&search_by_map=true&s_tag=gSo7bMO2">Airbnb</a>!
+
+    </h6>
+    <br>
+    <br>
+    <h3>Where can I park?</h3>
+    <br>
+    <br>
+    <h6>
+    Park-rite (458 W Lafayette Blvd, Detroit, MI 48226)
+    <br>
+    <br>
+    One Campus Martius Parking Garage 
+    <br>
+    <br>
+    Griswold-Larned Parking Garage (525 Griswold St, Detroit, MI 48226)
+    <br>
+    <br>
+    Miller Parking Services, LLC (400 Renaissance Center #908, Detroit, MI 48243)
+    <br>
+    <br>
+    Greektown Parking Garage (555 E Lafayette St, Detroit, MI 48226)
+    <br>
+    <br>
+    Grand Circus Park Garage (1601 Woodward Ave, Detroit, MI 48226)
+    <br>
+    <br>
+    Ford Field Parking Garage (1902 St Antoine St, Detroit, MI 48226)
+    </h6>
+    <br>
+    <br>
+    <h3>Where can I hang out for free?</h3>
+    <br>
+    <h6>
+    The BELT
+    <br>
+    <br>
+    RiverWalk Park
+    <br>
+    <br>
+    Detroit Riverfront Conservancy
+    <br>
+    <br>
+    Hart Plaza
+    <br>
+    <br>
+    Campus Martius Park
+    <br>
+    <br>
+    West RiverFront Park
+    <br>
+    <br>
+    New Center Park
+    <br>
+    <br>
+    Eastern Market
+    <br>
+    <br>
+    Belle Isle (Over the MacArthur Bridge)
+    </h6>
+<a href="#detroithistory" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+</section>
+
+<!-- Detroit History -->
+    <section id="detroithistory" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>History of Detroit</h2>
+                    <h5>Detroit was founded in 1701 by Antoine de la Mothe Cadillac. Detroit means “strait” in French, which is derived from the narrow river (The Detroit River) connecting Lake St. Clair and Lake Erie. In 1805, Detroit was formed into Michigan territory from The Northwest territory. On June 11, 1805 Detroit was destroyed by a fire, and the citizens were given an opportunity to rebuild Detroit. Canadian Campaigns was the war of 1812 that Detroit surrendered  to the British. After a little over a year of trying to recapture the city, it was re-established.  On August 26, 1817 the University of Michigania was founded. On March 18, 1837  the University of Michigania was renamed the University of Michigan, and moved from Detroit to Ann Arbor. Detroit was the state capital of Michigan before being moved to Lansing in 1848. In 1900, Detroit was the 13th largest city in the USA. Also, the world’s largest manufacturer of heating, cooking stoves, ship building, cigars and tobacco, beer, rail cars, pharmaceuticals, and foundry and machine shop products. As manufacturing developed over the years, in 1903 Henry Ford came along and started one of the manufacturing companies in Detroit. The Ford Motor Company had a big breakthrough with the Model T in 1908. Henry set up his first assembly line and offer jobs to individuals. The Ford Motor Company played a crucial role in WWII. During the 1950s and 1960s the company started to expand their building and acquire brands like Mazda, Mustang, Thunderbird, and Land Rover.</h5>
+                    
+                    <p></p> 
+                 </div>
+            </div>
+        </div>
+         <a href="#aboutus" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+    </section>
+
+ <!-- About Section -->
+    <section id="aboutus" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About Us</h2>
+                    <p>Created by Team KAT</p>
+                    
+                </div>
+            </div>
+        </div>
+   <!--     <div class="container">-->
+   <!--<div class="column-center">Kamie Mueller</div>-->
+   <!--<div class="column-left">Alisa Chen </div>-->
+   <!--<div class="column-right">Column right</div>-->
+<!--puts "Alisa Chen'.column-left{ float: left; width: 33%; }-->
+<!--puts "Kamie Mueller".column-right{ float: right; width: 33%; }-->
+<!--puts "Trecia Blevins".column-center{ display: inline-block; width: 33%; }-->
+<!--</div>-->
+
+<style>
+    .column-left{ float: left; width: 33%; }
+    .column-right{ float: right; width: 33%; }
+    .column-center{ display: inline-block; width: 33%; }
+</style>
+    <div class="container">
+        <div class="column-left">
+<!--            <ul style="list-style-type:circle">-->
+<!--  <li>Coffee</li>-->
+<!--  <li>Tea</li>-->
+<!--  <li>Milk</li>-->
+
+<!--</ul>-->
+            <h5>Alisa Chen</h5>
+            <br>
+            <img src="https://files.slack.com/files-pri/T6J5V8VA4-F6QH4820J/dsc_0718.jpg" alt="Alisa" style="width:304px;height:200px;">
+        <br>
+        <br>
+        Likes dogs, iced coffee, hiking, hockey, and stickers
+        <br>
+            Troy High '17 
+            <br>
+            <a href="http://www.nsliforyouth.org/" target="_blank">NSLI-Y</a> Zhuhai, China summer 2016 and Kaohsiung, Taiwan academic year 2017-2018
+            <br>
+  
+            Reed College '22
+    </div>
+    <div class="column-center">
+        <h5>Kamie Mueller</h5>
+        <br><img src="https://files.slack.com/files-pri/T6J5V8VA4-F6QH34DQS/dsc_0711.jpg" alt="Kamie" style="width:304px;height:200px;">
+        <br>
+        <br>
+        CMS class of 2022 
+        <br> 
+        Tennis player
+        <br>
+        Loves playing the piano
+        <br>
+        Proud Slytherclaw
+        <br>
+        KWK scholar
+        <br>
+        Loves "koding"
+        <br>
+        KITTIES!!!
+        </div>
+    <div class="column-right">
+        <h5>Trecia Blevins</h5>
+        <br>
+        <img src="https://files.slack.com/files-pri/T6J5V8VA4-F6PTCRY1W/dsc_0703.jpg" alt="Trecia" style="width:304px;height:200px;">
+        <br>
+        <br>KWK was my first coding experience.
+        <br>I was on the robotics team and that made me want to apply for KWK.
+        <br>I enjoy playing sports. 
+        <br>I enjoy being outdoors and weekend fun.
+        <br>
+        
+        
+        
+    </div>
+</div>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+ <p><a href="https://www.kodewithklossy.com/"target="_blank"> Kode With Klossy Detroit 2017</a></p>
+ 
+ 
+<a href="#contact" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+    </section>
+      
+      
+      
+      
+      <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact Kode With Klossy</h2>
+                    <p>Feel free to visit the Kode with Klossy website:<p><a href="https://www.kodewithklossy.com/"target="_blank"> Kode With Klossy</a></p></p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/kodewithklossy?lang=en" target="_blank"class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">KWK Twitter</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/kodewithklossy/?hl=en" target="_blank"class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">KWK Instagram</span></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/kodewithklossy/" target="_blank"class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">KWK Facebook</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         
+                         <a href="#map" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+    </section>
+    
+    
+    
+   <!--<a href="#map" class="btn btn-circle page-scroll">-->
+   <!--                         <i class="fa fa-angle-double-down animated"></i>-->
+   <!--                     </a>-->
+  
+
+    <!-- Map Section -->
+
+
+    
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+    <!--map -->
+    
+    <section id="map" class="content-section text-center">
+ 
+                    <h2>Map:</h2>
+        <!--<div class="container">-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-lg-8 mx-auto">-->
+        <!--            <h2>Map</h2>-->
+<div id="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WYBDRZP41jeilkuJJacf_RvkSyM" width="1000" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<section>
+
+  
+     <a href="#youtube" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+   
+    </section>
+    
+  
+       
+                     
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<!--youtube vid-->
+      <section id="youtube" class="content-section text-center"> 
+         <!--<div class="container">-->
+         <!--   <div class="row">-->
+                <div class="col-lg-8 mx-auto">
+                    <h2>Music:</h2>
+                   <div>
+                      <center> <iframe width="1000" height="500" src="https://www.youtube.com/embed/jmPmfw6Twao?autoplay=1" frameborder="0" allowfullscreen></iframe></center>
+                      </div>
+        <!--        </div>-->
+        <!--</div>-->
+   </div>
+   </section>
+<!-- Footer -->
+    <footer>
+    
+        <div class="container text-center">
+            <p>Copyright &copy; Detroit City Guide 2017</p>
+        </div>
+    </footer>
+
+
+
+
+ 
+ <!--Bootstrap core JavaScript -->
+<!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">-->
+<!--  <div class="carousel-inner" role="listbox">-->
+<!--    <div class="carousel-item active">-->
+<!--      <img class="d-block img-fluid" src="..." alt="First slide">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img class="d-block img-fluid" src="..." alt="Second slide">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img class="d-block img-fluid" src="..." alt="Third slide">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">-->
+<!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--    <span class="sr-only">Previous</span>-->
+<!--  </a>-->
+<!--  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">-->
+<!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--    <span class="sr-only">Next</span>-->
+<!--  </a>-->
+<!--</div>-->
+
+  <!-- Wrapper for slides -->
+<!--  <div class="carousel-inner">-->
+<!--    <div class="item active">-->
+<!--      <img src="slide1.jpg" alt="picture1">-->
+<!--    </div>-->
+
+<!--    <div class="item">-->
+<!--      <img src="slide2.jpg" alt="picture2">-->
+<!--    </div>-->
+
+    <!--<div class="item">-->
+    <!--  <img src="ny.jpg" alt="New York">-->
+    <!--</div>-->
+<!--  </div>-->
+
+  <!-- Left and right controls -->
+<!--  <a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+<!--    <span class="glyphicon glyphicon-chevron-left"></span>-->
+<!--    <span class="sr-only">Previous</span>-->
+<!--  </a>-->
+<!--  <a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+<!--    <span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--    <span class="sr-only">Next</span>-->
+<!--  </a>-->
+<!--</div>-->
+
+<!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">-->
+<!--  <div class="carousel-inner" role="listbox">-->
+<!--    <div class="carousel-item active">-->
+<!--      <img class="d-block img-fluid" src="slide1.jpg" alt="First slide">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img class="d-block img-fluid" src="slide2.jpg" alt="Second slide">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img class="d-block img-fluid" src="downloads-bg.jpg" alt="Third slide">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div id="carousel" class="carousel">-->
+<!--  <input class="carousel-active" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked="checked">-->
+<!--  <div class="carousel-item">-->
+<!--    <div class="carousel-controls" aria-hidden="true">-->
+<!--      <label for="carousel-3" class="carousel-control prev" title="Prev">«</label>-->
+<!--      <label for="carousel-2" class="carousel-control next" title="Next">»</label>-->
+<!--    </div>-->
+<!--    <img src="slide1.jpg" alt="First slide">-->
+<!--  </div>-->
+
+<!--  <input class="carousel-active" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden>-->
+<!--  <div class="carousel-item">-->
+<!--    <div class="carousel-controls" aria-hidden="true">-->
+<!--      <label for="carousel-1" class="carousel-control prev" title="Prev">«</label>-->
+<!--      <label for="carousel-3" class="carousel-control next" title="Next">»</label>-->
+<!--    </div>-->
+<!--    <img src="slide2" alt="Blank image">-->
+<!--    <div class="carousel-caption">-->
+<!--      <h2>SECOND SLIDE <br><small>with an <i>amazing caption</i></small></h2>-->
+<!--      <p>Aren`t you impressed?</p>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <input class="carousel-active" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden>-->
+<!--  <div class="carousel-item">-->
+<!--    <div class="carousel-controls" aria-hidden="true">-->
+<!--      <label for="carousel-2" class="carousel-control prev" title="Prev">«</label>-->
+<!--      <label for="carousel-1" class="carousel-control next" title="Next">»</label>-->
+<!--    </div>-->
+<!--    <img src="http://placehold.it/1200x300/ccc/077/&text=Third+slide" alt="Third slide">-->
+<!--  </div>-->
+
+<!--  <ol class="carousel-indicators" aria-label="Carousel navigation" aria-hidden="true">-->
+<!--    <li>-->
+<!--      <label for="carousel-1" class="carousel-indicator" title="Jump to carousel item #1">●</label>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <label for="carousel-2" class="carousel-indicator" title="Jump to carousel item #2">●</label>-->
+<!--    </li>-->
+<!--    <li>-->
+<!--      <label for="carousel-3" class="carousel-indicator" title="Jump to carousel item #3">●</label>-->
+<!--    </li>-->
+<!--  </ol>-->
+<!--</div>-->
+<!--<style>-->
+<!--    .carousel-item{-->
+<!--        min-height: 400px;-->
+<!--    }-->
+<!--</style>-->
+
+
+<!--</body>-->
+
+
+</section>
+</html>
