@@ -24,7 +24,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  json
+
   pry
   shotgun
   sinatra
